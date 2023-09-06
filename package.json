@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec 'pnpm build && pnpm start'",
+    "type-check": "tsc",
     "build": "swc src -d dist -s",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
